@@ -25,8 +25,12 @@ color: white;
 font-size: 20px;
 cursor: pointer;
 }
+.btn:active{
+    background-color: #fb8e00;
+}
 
 /* custom-style */
+
 .hero-section{
     background-color: black;
     display: flex;
@@ -38,6 +42,7 @@ cursor: pointer;
     margin-top: 50px;
     gap: 82px;
     padding-left: 125px;
+  
 }
 .banner-left{
     display: flex;
@@ -45,6 +50,7 @@ cursor: pointer;
     gap: 20px;
     max-width: 570px;
     flex: 1;
+    
 }
 .banner-left h1{
     font-size: 4rem;
@@ -60,6 +66,8 @@ cursor: pointer;
     width: 100%;
     display: block;
 }
+
+
 
 
 /* card-style */
@@ -107,13 +115,16 @@ cursor: pointer;
 .card{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     max-height: 362px;
     max-width: 312px;
     border-radius: 10px;
     box-shadow: 0px 2px 0px 2px whitesmoke;
 }
-
+.card img{
+    max-width: 100%;
+    max-height: 50%;
+}
 .card h3{
    padding-left: 20px;
 }
@@ -124,6 +135,10 @@ cursor: pointer;
     margin-left: 20px;
     padding: 4px 16px;
     cursor: pointer;
+}
+.card button:active{
+    background-color: #fb8e00;
+    color: white;
 }
 .icon{
     display: flex;
@@ -239,6 +254,7 @@ max-width: 100%;
 .card-parent{
     display: flex;
     flex-direction: column;
+    gap: 16px;
     max-width: 100%;
     max-height: 100%;
     justify-content: center;
@@ -249,6 +265,7 @@ max-width: 100%;
 .card{
     margin-bottom: 24px;
     max-width: 100%;
+    max-height: 100%;
 }
 .card img{
      width: 100%;
