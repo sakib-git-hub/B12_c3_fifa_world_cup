@@ -8,7 +8,7 @@
 .container{
     max-width: 1414px;
     margin: 50px auto;
-   
+  
 }
 
 img{
@@ -108,8 +108,8 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 362px;
-    width: 312px;
+    max-height: 362px;
+    max-width: 312px;
     border-radius: 10px;
     box-shadow: 0px 2px 0px 2px whitesmoke;
 }
@@ -178,23 +178,21 @@ footer{
 
 
 /* mobile-device */
-@media screen and (max-width:567px) {
+@media screen and (max-width:576px) {
 .container{
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 10%;
-    padding-right: 10%;
+   
 }
  .hero-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-     padding: 20px;
-     border-radius: 10px;
-       margin: 10%;
-    margin-right: 10%;
+    margin: 30px 30px;
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 10px;
     
  }   
 .banner-left h1{
@@ -204,8 +202,8 @@ footer{
 }
 
 img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -233,20 +231,28 @@ max-width: 100%;
     width: 210px;
 }
 .card-section-parent{
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin: 0 auto;
 }
 
 .card-parent{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px;
+   
 }
 .card{
-    width: 100%;
-    height: 100%;
     margin-bottom: 24px;
-   
+    max-width: 100%;
+}
+.card img{
+     width: 100%;
+    height: 100%;
 }
 
 /* footer */
@@ -282,7 +288,7 @@ max-width: 100%;
 
 
 /* tab */
-@media screen and (min-width:568px) and (max-width:992px){
+@media screen and (min-width:577px) and (max-width:992px){
 .container{
     max-width: 100%;
     margin: 0 auto;
@@ -294,23 +300,37 @@ max-width: 100%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-     padding: 20px;
+     padding: 5px;
+     padding-bottom: 0;
      border-radius: 10px;
-       margin: 10%;
-    margin-right: 10%;
-    
+     margin-top: 8%;
+     margin-left:40px ;
+     margin-right:40px ;
+     gap: 0;
  }   
+ .banner-left{
+     max-width: 100%;
+    padding-left: 15px;
+ }
 .banner-left h1{
     font-size: 2rem;
     font-weight: 600;
     line-height: 2rem;
 }
 
-img{
-    width: 100%;
-    height: 100%;
+.banner-right{
+    padding-top: 55px;
+    max-width: 100%;
+    max-height:fit-content;
+    display: flex;
+    align-items: end;
 }
 
+.banner-right img{
+    width: 100%;
+   display: block;
+  
+}
 
 /* card-style */
 .card-section-parent{
@@ -322,19 +342,24 @@ img{
   
 }
 .upcoming-match{
+display: flex;
+flex-direction: row;    
 margin: 0 auto;
 background-color: white;
-max-width: 100%;
+width: 100%;
+height: 100%;
+padding-top: 15px;
 }
 
 .upcoming-match button{
     border-radius: 10px;
     border: 1px solid #E8E8E8;
-}
-.upcoming-match > button:nth-child(1){
+    width: 100%;
+    height: 100%;
     padding: 10px;
-    width: 210px;
+    font-size: 17px;
 }
+
 .card-section-parent{
     width: 100%;
     margin: 0 auto;
@@ -353,9 +378,13 @@ max-width: 100%;
 }
 
 /* footer */
+footer{
+    max-width: 90%;
+    margin: 0 auto;
+}
 .footer-parent{
     max-width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .footer-parent h1{
     padding-bottom: 20px;
@@ -372,13 +401,134 @@ max-width: 100%;
    flex-direction:flex;
    flex-wrap: wrap;
     list-style: none;
-    gap: 5px;
+      gap: 25px;
   justify-content: center;
   align-items: center;
  margin-bottom: 15px;
 
 }
+}
 
 
+/* tablet & laptop */
+@media screen and (min-width:993px) and (max-width:1200px){
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+ .hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+     padding: 5px;
+     padding-bottom: 0;
+     border-radius: 10px;
+     margin-top: 8%;
+    margin-left:50px ;
+     margin-right:50px ;
+    gap: 0;
+ }   
+ .banner-left{
+     max-width: 100%;
+    padding-left: 30px;
+ }
+.banner-left h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.banner-right{
+    padding-top: 55px;
+    max-width: 100%;
+    max-height:fit-content;
+    display: flex;
+    align-items: end;
+}
+
+.banner-right img{
+    width: 100%;
+   display: block;
+  
+}
+
+/* card-style */
+.card-section-parent{
+    display: flex;
+    flex-direction: column;
+    gap:55px ;
+    justify-content: center;
+    justify-items: center;
+  
+}
+.upcoming-match{
+display: flex;
+flex-direction: row;    
+margin: 0 auto;
+background-color: white;
+width: 100%;
+height: 100%;
+padding-top: 15px;
+}
+
+.upcoming-match button{
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.card-section-parent{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+   
+}
+
+/* footer */
+footer{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.footer-parent{
+    max-width: 100%;
+    margin: 50px auto;
+}
+.footer-parent h1{
+    padding-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-size: 600;
+     margin-top: 30px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-nav ul{
+    display: flex;
+   flex-direction:flex;
+   flex-wrap: wrap;
+    list-style: none;
+    gap: 25px;
+  justify-content: center;
+  align-items: center;
+ margin-bottom: 15px;
+
+}
 
 }
